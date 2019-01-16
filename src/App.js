@@ -74,8 +74,7 @@ tick() {
   }
   this.secondsRemaining--
   }
-  startCountDown() {
-    console.log("test")
+startCountDown() {
   this.intervalHandle = setInterval(this.tick, 1000);
   let time = this.state.minutes;
   this.secondsRemaining = time * 60;
